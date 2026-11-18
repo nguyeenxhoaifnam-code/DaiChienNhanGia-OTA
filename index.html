@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cài Đặt Đại Chiến Nhẫn Giả (iOS)</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f172a;color:#f8fafc;margin:0;padding:24px 16px;display:flex;justify-content:center}
+    .card{max-width:440px;width:100%;background:#1e293b;border:1px solid rgba(251,191,36,.35);border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+    .head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .head img{width:76px;height:76px;border-radius:18px;border:1px solid rgba(255,255,255,.15)}
+    .btn{display:block;text-align:center;background:linear-gradient(135deg,#007aff,#0051d5);color:#fff;text-decoration:none;font-weight:700;padding:14px 18px;border-radius:12px;font-size:16px;margin:14px 0}
+    .box{background:#0f172a;border-radius:12px;padding:14px;font-size:13.5px;line-height:1.55;color:#cbd5e1}
+    .warn{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.35);color:#fde68a;border-radius:12px;padding:12px;font-size:13px;line-height:1.5;margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="head">
+      <img src="icon.png" alt="Đại Chiến Nhẫn Giả">
+      <div>
+        <h1 style="margin:0 0 4px;font-size:20px">Đại Chiến Nhẫn Giả (iOS)</h1>
+        <div style="font-size:13px;color:#94a3b8">Bản cài đặt trực tiếp • iOS 15+ • ~1.45 GB</div>
+      </div>
+    </div>
+    <a class="btn" href="itms-services://?action=download-manifest&url=https://nguyeenxhoaifnam-code.github.io/DaiChienNhanGia-OTA/manifest.plist">Cài Đặt Đại Chiến Nhẫn Giả Ngay</a>
+    <div class="box">
+      <strong>Hướng dẫn cài đặt:</strong><br>
+      1. Mở trang này bằng <strong>Safari</strong> trên iPhone/iPad (nếu đang ở TikTok/Zalo/Facebook hãy bấm <code>⋯</code> → <strong>Mở bằng Safari</strong>).<br>
+      2. Bấm nút <strong>Cài Đặt Đại Chiến Nhẫn Giả Ngay</strong> → chọn <strong>Cài đặt (Install)</strong>.<br>
+      3. Dùng <strong>Wi-Fi</strong> ổn định để tải (~1.45 GB).<br>
+      4. Cài xong, vào <strong>Cài đặt → Cài đặt chung → Quản lý VPN &amp; Thiết bị → Chengdu Railway Bureau → Tin cậy</strong> rồi mở game.
+    </div>
+    <div class="warn" id="inapp" style="display:none">
+      Bạn đang mở bằng trình duyệt trong ứng dụng (Zalo/Facebook/TikTok). Hãy bấm biểu tượng menu góc màn hình và chọn <strong>Mở bằng Safari</strong> để iPhone hiện nút cài đặt!
+    </div>
+  </div>
+  <script>
+    if (/FBAN|FBAV|Zalo|TikTok|BytedanceWebview|musical_ly/i.test(navigator.userAgent)) {
+      document.getElementById('inapp').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
